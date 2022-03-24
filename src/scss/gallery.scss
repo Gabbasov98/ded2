@@ -1,0 +1,109 @@
+.gallery {
+    padding: 40px 0;
+    &__tabs {
+        margin-bottom: 40px;
+    }
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    &__form,
+    &__consult {
+        grid-column: 1/3;
+    }
+    &__item2 {
+        img {
+            width: 100%;
+        }
+        a {
+            display: block;
+            position: relative;
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                top: 0;
+                left: 0;
+                transition: all .125s;
+            }
+        }
+    }
+    &__info {
+        margin-bottom: 27px;
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .arrow-title {
+            &__img {
+                background-image: url(../img/location.svg);
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    &__link {
+        width: 270px;
+        height: 50px;
+        border-radius: 45px;
+        svg {
+            margin-left: 8px;
+        }
+    }
+    &__desc {
+        margin-top: 27px;
+        font-size: 16px;
+        line-height: 162%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .gallery {
+        &__info {
+            margin-bottom: 16px;
+            &-top {
+                display: block;
+            }
+        }
+        &__link {
+            margin-top: 16px;
+        }
+        &__desc {
+            margin-top: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        &__wrap {
+            grid-template-columns: 100%;
+        }
+        &__form,
+        &__consult {
+            grid-column: 1/2;
+        }
+        &__title {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .gallery {
+        &__link {
+            width: 100%;
+        }
+    }
+}

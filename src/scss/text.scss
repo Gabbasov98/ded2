@@ -1,0 +1,180 @@
+.title1 {
+    font-size: 36px;
+    line-height: 117%;
+    @media screen and (max-width: 1200px) {
+        font-size: 30px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+    }
+}
+
+.title1-bold {
+    font-size: 36px;
+    line-height: 117%;
+    font-weight: 900;
+    @media screen and (max-width: 1200px) {
+        font-size: 30px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+        font-weight: 700;
+    }
+}
+
+.title2 {
+    font-size: 30px;
+    line-height: 120%;
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+        line-height: 127%;
+    }
+}
+
+.title2-bold {
+    font-size: 30px;
+    line-height: 120%;
+    font-weight: 800;
+    @media screen and (max-width: 768px) {
+        font-size: 22px;
+        line-height: 127%;
+    }
+}
+
+.title3 {
+    font-size: 22px;
+    line-height: 127%;
+}
+
+.title3-bold {
+    font-size: 22px;
+    line-height: 127%;
+    font-weight: 700;
+}
+
+.title4 {
+    font-size: 18px;
+    line-height: 156%;
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+        line-height: 162%;
+    }
+}
+
+.title4-bold {
+    font-size: 18px;
+    line-height: 156%;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 144%;
+}
+
+.subtitle-bold {
+    font-size: 18px;
+    line-height: 144%;
+    font-weight: 600;
+}
+
+.text-large {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.text-large-bold {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+.text-medium {
+    font-size: 14px;
+    line-height: 186%;
+}
+
+.text-medium-bold {
+    font-size: 14px;
+    line-height: 186%;
+    font-weight: 700;
+}
+
+.text-link {
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: underline;
+}
+
+.arrow-title {
+    position: relative;
+    padding-left: 40px;
+    min-height: 33px;
+    &__img {
+        position: absolute;
+        width: 26px;
+        height: 33px;
+        background-image: url(../img/arrow.svg);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        margin-right: 16px;
+    }
+}
+
+p {
+    font-size: 16px;
+    line-height: 162%;
+}
+
+ul {
+    li {
+        position: relative;
+        padding-left: 40px;
+        font-size: 16px;
+        line-height: 162%;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 24px;
+            height: 24px;
+            left: 0;
+            top: 0;
+            background-image: url(../img/check2.svg);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+ol {
+    counter-reset: num;
+    li {
+        position: relative;
+        padding-left: 40px;
+        font-size: 16px;
+        line-height: 162%;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+        &:before {
+            content: "0" counter(num);
+            counter-increment: num;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 16px;
+            line-height: 150%;
+            font-weight: 700;
+            border-bottom: 2px solid $primary-color;
+            height: 24px;
+            display: block;
+        }
+    }
+}

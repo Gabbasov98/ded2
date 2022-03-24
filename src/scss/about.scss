@@ -1,0 +1,203 @@
+.about {
+    padding: 30px 0;
+    &__ceo {
+        display: flex;
+        &-img {
+            flex-shrink: 0;
+            margin-right: 30px;
+            img {
+                width: 298px;
+                height: 298px;
+                border-radius: 50%;
+            }
+        }
+        &-text {
+            flex-grow: 1;
+            p {
+                line-height: 150%;
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    &__info {
+        margin-top: 43px;
+        padding: 12px 0 0 130px;
+        font-style: italic;
+        color: #777777;
+        background-image: url(../img/quote2.svg);
+        background-position: 45px 0;
+        background-repeat: no-repeat;
+        &-title {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 500;
+        }
+        &-desc {
+            font-size: 16px;
+            line-height: 28px;
+            margin-top: 22px;
+        }
+        &-desc2 {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 18px;
+            color: #000;
+            font-style: normal;
+        }
+    }
+}
+
+.about-why {
+    background: #EDEFEA;
+    padding: 60px 0 75px;
+    li {
+        padding-left: 97px;
+        line-height: 162%;
+        &:not(:last-child) {
+            margin-bottom: 38px;
+        }
+        &::before {
+            width: 60px;
+            height: 60px;
+        }
+        p {
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.about-team {
+    padding: 30px 0 90px;
+    &__desc {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 156%;
+        margin-top: 31px;
+    }
+    &__items {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about {
+        &__ceo {
+            &-img {
+                margin-right: 15px;
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+        &__info {
+            margin-top: 20px;
+        }
+    }
+    .about-team {
+        &__items {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about {
+        &__ceo {
+            &-img {
+                margin-right: 10px;
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            &-text {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        &__info {
+            background-size: 32px auto;
+            background-position: 0 0;
+            padding: 0 0 0 45px;
+            &-title {
+                font-size: 16px;
+            }
+            &-desc {
+                margin-top: 10px;
+                font-size: 15px;
+            }
+            &-desc2 {
+                margin-top: 6px;
+                font-size: 16px;
+                line-height: 120%;
+            }
+        }
+    }
+    .about-why {
+        background: #EDEFEA;
+        padding: 30px 0;
+        li {
+            padding-left: 30px;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            &::before {
+                width: 24px;
+                height: 24px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+    .about-team {
+        &__items {
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 25px;
+        }
+        &__desc {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        &__ceo {
+            display: block;
+            &-img {
+                text-align: center;
+                margin: 0 auto 20px;
+            }
+        }
+        &__info {
+            padding-left: 0;
+            background-image: none;
+        }
+    }
+    .about-team {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-team {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    }
+}

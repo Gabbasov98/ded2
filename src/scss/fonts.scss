@@ -1,0 +1,15 @@
+@import 'mixins';
+@include font-face('Raleway', 'Raleway-Medium', 500);
+@include font-face('Montserrat Alternates', 'MontserratAlternates-Bold', 700);
+@include font-face('Montserrat', 'Montserrat-Light', 300);
+@include font-face('Montserrat', 'Montserrat-LightItalic', 300, italic);
+@include font-face('Montserrat', 'Montserrat-Regular', 400);
+@include font-face('Montserrat', 'Montserrat-RegularItalic', 400, italic);
+@include font-face('Montserrat', 'Montserrat-SemiBold', 600);
+@include font-face('Montserrat', 'Montserrat-SemiBoldItalic', 600, italic);
+@include font-face('Montserrat', 'Montserrat-Bold', 700);
+@include font-face('Montserrat', 'Montserrat-BoldItalic', 700, italic);
+@include font-face('Montserrat', 'Montserrat-ExtraBold', 800);
+@include font-face('Montserrat', 'Montserrat-ExtraBoldItalic', 800, italic);
+@include font-face('Montserrat', 'Montserrat-Black', 900);
+@include font-face('Montserrat', 'Montserrat-BlackItalic', 900, italic);

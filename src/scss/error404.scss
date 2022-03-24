@@ -1,0 +1,42 @@
+.error404 {
+    padding: 110px 0 90px;
+    text-align: center;
+    &__img {
+        width: 462px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__title {
+        span {
+            display: block;
+        }
+    }
+    &__desc {
+        margin: 16px auto 0;
+        font-size: 16px;
+        line-height: 162%;
+        color: #6B6B6B;
+        max-width: 880px;
+    }
+    &__btn {
+        max-width: 100%;
+        width: 233px;
+        height: 50px;
+        border-radius: 45px;
+        margin: 30px auto 0;
+        font-size: 16px;
+        svg {
+            margin-left: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .error404 {
+        padding: 30px 0;
+        &__img {
+            width: 350px;
+            max-width: 100%;
+        }
+    }
+}

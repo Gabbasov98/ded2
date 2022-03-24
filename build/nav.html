@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Навигация</title>
+</head>
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+    }
+    
+    .wrapper strong {
+        font-size: 30px;
+        display: block;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
+    strong:first-child {
+        margin-top: 0;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 400px;
+        height: 65px;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <strong>Основные страницы</strong>
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка проекта
+        </a>
+        <a href="services.html" style="display: block; margin-bottom: 20px;">
+            Услуги
+        </a>
+        <a href="service-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка услуги
+        </a>
+        <a href="gallery.html" style="display: block; margin-bottom: 20px;">
+            Галерея
+        </a>
+        <a href="gallery2.html" style="display: block; margin-bottom: 20px;">
+            Галерея 2
+        </a>
+        <a href="gallery3.html" style="display: block; margin-bottom: 20px;">
+            Галерея 3
+        </a>
+        <a href="blog.html" style="display: block; margin-bottom: 20px;">
+            Блог
+        </a>
+        <a href="blog-item.html" style="display: block; margin-bottom: 20px;">
+            Блог карточка
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О нас
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <a href="feedback.html" style="display: block; margin-bottom: 20px;">
+            Отзывы
+        </a>
+        <button data-modal-target="modal1" style="border: 2px solid #000;margin-bottom: 20px;">
+            modal1
+        </button>
+        <button data-modal-target="modal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            modal2
+        </button>
+        <button data-modal-target="modal3" style="border: 2px solid #000;margin-bottom: 20px;">
+            modal3
+        </button>
+        <button data-modal-target="modal4" style="border: 2px solid #000;margin-bottom: 20px;">
+            modal4
+        </button>
+    </div>
+
+    <div id="modal1" class="modal">
+    <button class="modal__close">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.05105 6.97103C6.17276 7.09336 6.33274 7.15422 6.49272 7.15422C6.65269 7.15422 6.81267 7.09336 6.93438 6.97103C7.17842 6.72699 7.17842 6.33112 6.93438 6.08708L1.93745 1.08513C1.69341 0.841089 1.29817 0.841089 1.05413 1.08513C0.810083 1.32918 0.810083 1.72504 1.05413 1.96908L6.05105 6.97103Z" fill="#777777"/>
+            <path d="M9.87522 9.03002L16.9299 1.96907C17.1739 1.72503 17.1739 1.32916 16.9299 1.08512C16.6858 0.841077 16.2906 0.733171 16.0466 0.977841L8.55086 8.37254H8.36516V8.58898L0.962306 16.091C0.718262 16.335 0.764687 16.7309 1.0081 16.9749C1.12981 17.0972 1.313 17.1581 1.47298 17.1581C1.63295 17.1581 1.80422 17.0972 1.92593 16.9749L8.98625 9.91459L16.0434 16.9755C16.1651 17.0979 16.327 17.1587 16.4863 17.1587C16.6457 17.1587 16.8069 17.0979 16.9286 16.9755C17.1727 16.7315 17.1733 16.3356 16.9293 16.0916L9.87522 9.03002Z" fill="#777777"/>
+        </svg>
+    </button>
+
+    <p class="modal__title title2-bold">Оставить заявку</p>
+    <p class="modal__desc">Оставьте заявку мы ответим на все Ваши вопросы</p>
+    <form action="" class="modal__form validate-form">
+        <fieldset class="form-group">
+            <input type="text">
+            <label>Ваше имя</label>
+        </fieldset>
+        <fieldset class="form-group">
+            <input type="tel" class="required">
+            <label>Ваш телефон *</label>
+            <span class="form-group__error-text">это поле обязательно</span>
+        </fieldset>
+        <fieldset class="form-group">
+            <input type="email">
+            <label>Ваша почта</label>
+        </fieldset>
+
+
+        <div class="check">
+            <input checked type="checkbox" class="checkbox" id="modal-check">
+            <label for="modal-check">
+                Я согласен на обработку 
+                <a href="">персональных данных</a>
+            </label>
+        </div>
+        <button type="submit" class="modal__form-btn btn btn-black">
+            <span>Оставить заявку</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6C18 5.44771 17.5523 5 17 5L8 5C7.44772 5 7 5.44771 7 6C7 6.55228 7.44772 7 8 7L16 7L16 15C16 15.5523 16.4477 16 17 16C17.5523 16 18 15.5523 18 15L18 6ZM6.70711 17.7071L17.7071 6.70711L16.2929 5.29289L5.29289 16.2929L6.70711 17.7071Z" fill="white"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+
+<div id="modal2" class="modal modal2">
+    <button class="modal__close">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.05105 6.97103C6.17276 7.09336 6.33274 7.15422 6.49272 7.15422C6.65269 7.15422 6.81267 7.09336 6.93438 6.97103C7.17842 6.72699 7.17842 6.33112 6.93438 6.08708L1.93745 1.08513C1.69341 0.841089 1.29817 0.841089 1.05413 1.08513C0.810083 1.32918 0.810083 1.72504 1.05413 1.96908L6.05105 6.97103Z" fill="#777777"/>
+            <path d="M9.87522 9.03002L16.9299 1.96907C17.1739 1.72503 17.1739 1.32916 16.9299 1.08512C16.6858 0.841077 16.2906 0.733171 16.0466 0.977841L8.55086 8.37254H8.36516V8.58898L0.962306 16.091C0.718262 16.335 0.764687 16.7309 1.0081 16.9749C1.12981 17.0972 1.313 17.1581 1.47298 17.1581C1.63295 17.1581 1.80422 17.0972 1.92593 16.9749L8.98625 9.91459L16.0434 16.9755C16.1651 17.0979 16.327 17.1587 16.4863 17.1587C16.6457 17.1587 16.8069 17.0979 16.9286 16.9755C17.1727 16.7315 17.1733 16.3356 16.9293 16.0916L9.87522 9.03002Z" fill="#777777"/>
+        </svg>
+    </button>
+
+    <p class="modal__title title2-bold">Заголовок </p>
+    <p class="modal__desc">Оставьте заявку мы ответим на все Ваши вопросы</p>
+    <form action="" class="modal__form validate-form">
+        <fieldset class="form-group">
+            <input type="text">
+            <label>Ваше имя</label>
+        </fieldset>
+        <fieldset class="form-group">
+            <input type="tel" class="required">
+            <label>Ваш телефон *</label>
+            <span class="form-group__error-text">это поле обязательно</span>
+        </fieldset>
+        <fieldset class="form-group">
+            <input type="email">
+            <label>Ваша почта</label>
+        </fieldset>
+        <fieldset class="form-group modal__textarea">
+            <textarea></textarea>
+            <label>Ваш вопрос </label>
+        </fieldset>
+        <div class="modal__form-bottom">
+            <div class="check">
+                <input checked type="checkbox" class="checkbox" id="modal-check2">
+                <label for="modal-check2">
+                    Я согласен на обработку 
+                    <a href="">персональных данных</a>
+                </label>
+            </div>
+            <button type="submit" class="modal__form-btn btn btn-black">
+                <span>Оставить заявку</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6C18 5.44771 17.5523 5 17 5L8 5C7.44772 5 7 5.44771 7 6C7 6.55228 7.44772 7 8 7L16 7L16 15C16 15.5523 16.4477 16 17 16C17.5523 16 18 15.5523 18 15L18 6ZM6.70711 17.7071L17.7071 6.70711L16.2929 5.29289L5.29289 16.2929L6.70711 17.7071Z" fill="white"></path>
+                </svg>
+            </button>
+        </div>
+
+    </form>
+</div>
+
+<div id="modal3" class="modal modal3">
+
+    <img src="img/check2.svg" alt="Галочка" title="Галочка" class="modal__icon">
+
+    <p class="modal__title title2-bold">Спасибо</p>
+    <p class="modal__desc">Ваша заявка была успешно отправлена</p>
+
+</div>
+
+
+<div id="modal4" class="modal modal4">
+    <button class="modal__close">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.05105 6.97103C6.17276 7.09336 6.33274 7.15422 6.49272 7.15422C6.65269 7.15422 6.81267 7.09336 6.93438 6.97103C7.17842 6.72699 7.17842 6.33112 6.93438 6.08708L1.93745 1.08513C1.69341 0.841089 1.29817 0.841089 1.05413 1.08513C0.810083 1.32918 0.810083 1.72504 1.05413 1.96908L6.05105 6.97103Z" fill="#777777"/>
+            <path d="M9.87522 9.03002L16.9299 1.96907C17.1739 1.72503 17.1739 1.32916 16.9299 1.08512C16.6858 0.841077 16.2906 0.733171 16.0466 0.977841L8.55086 8.37254H8.36516V8.58898L0.962306 16.091C0.718262 16.335 0.764687 16.7309 1.0081 16.9749C1.12981 17.0972 1.313 17.1581 1.47298 17.1581C1.63295 17.1581 1.80422 17.0972 1.92593 16.9749L8.98625 9.91459L16.0434 16.9755C16.1651 17.0979 16.327 17.1587 16.4863 17.1587C16.6457 17.1587 16.8069 17.0979 16.9286 16.9755C17.1727 16.7315 17.1733 16.3356 16.9293 16.0916L9.87522 9.03002Z" fill="#777777"/>
+        </svg>
+    </button>
+
+    <p class="modal__title title2-bold">О проекте</p>
+    <div class="modal__content">
+        <p class="modal__desc">
+            А ещё акционеры крупнейших компаний указаны как претенденты на роль ключевых факторов. Идейные соображения высшего порядка, а также курс на социально-ориентированный национальный проект играет определяющее значение для позиций, занимаемых участниками
+            в отношении поставленных задач.
+        </p>
+        <div class="modal__wrap">
+            <div class="modal__img">
+                <img src="img/modal.jpg" alt="" class="modal__img">
+            </div>
+            <div class="modal__right">
+                <p class="modal__subtitle">Заголовок список чекбокс</p>
+                <ul>
+                    <li>Явные признаки победы институционализации</li>
+                    <li>Учитывая ключевые сценарии поведения, постоянное информационно-пропагандистское</li>
+                    <li>Не следует, однако, забывать, что перспективное планирование обеспечивает широкому кругу (специалистов) участие в формировании позиций</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal__wrap">
+            <div class="modal__img">
+                <img src="img/modal.jpg" alt="" class="modal__img">
+            </div>
+            <div class="modal__right">
+                <p class="modal__subtitle">Заголовок список чекбокс</p>
+                <ul>
+                    <li>Явные признаки победы институционализации</li>
+                    <li>Учитывая ключевые сценарии поведения, постоянное информационно-пропагандистское</li>
+                    <li>Не следует, однако, забывать, что перспективное планирование обеспечивает широкому кругу (специалистов) участие в формировании позиций</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal__wrap">
+            <div class="modal__img">
+                <img src="img/modal.jpg" alt="" class="modal__img">
+            </div>
+            <div class="modal__right">
+                <p class="modal__subtitle">Заголовок список чекбокс</p>
+                <ul>
+                    <li>Явные признаки победы институционализации</li>
+                    <li>Учитывая ключевые сценарии поведения, постоянное информационно-пропагандистское</li>
+                    <li>Не следует, однако, забывать, что перспективное планирование обеспечивает широкому кругу (специалистов) участие в формировании позиций</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- <div class="modal-backdrop"></div> --> <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

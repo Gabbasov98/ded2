@@ -1,0 +1,157 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Блог", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="wrapper">
+        <header id="header" class='header'>
+            @@include('components/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='page-top'>
+                <div class='container'>
+                    <div class="breadcrumbs">
+                        <a href="" class="breadcrumbs__item">Главная</a>
+                        <span class="breadcrumbs__item">Блог</span>
+                    </div>
+                    <h1 class="page-top__title title1-bold">Блог </h1>
+                </div>
+            </section>
+
+
+            <section class='blog'>
+                <div class='container'>
+                    <div class='blog__items'>
+                        <div class="blog__item">
+                            @@include('components/cards/_blog-card.html',{ "img":"img/blog.webp", })
+                        </div>
+                        <div class="blog__item">
+                            @@include('components/cards/_blog-card.html',{ "img":"img/blog2.webp", })
+                        </div>
+                        <div class="blog__item">
+                            @@include('components/cards/_blog-card.html',{ "img":"img/blog3.webp", })
+                        </div>
+                        <div class="blog__item">
+                            <a href="" class="blog-card">
+                                <div class="blog-card__top">
+                                    <button class="blog-card__play btn">
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.5996 4.66797C11.9329 5.43777 11.9329 7.36227 10.5996 8.13207L3.09961 12.4622C1.76628 13.232 0.0996116 12.2698 0.0996117 10.7301L0.099612 2.06989C0.0996121 0.530293 1.76628 -0.431954 3.09961 0.337847L10.5996 4.66797Z" fill="#FFDF8B"/>
+                                        </svg>
+                                    </button>
+                                    <img src="img/blog4.webp" alt="Картинка статьи" title="Картинка статьи">
+                                </div>
+                                <div class="blog-card__bottom">
+                                    <h4 class="blog-card__title">Утепление прижимной стропила у фронтона</h4>
+                                    <p class="blog-card__desc">Лучше производить сразу во время монтажа кровли или позже при утеплении крыши, но уже</p>
+                                    <div class="blog-card__nav">
+                                        <div class="blog-card__link btn-link">
+                                            <span>Подробнее</span>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18 6C18 5.44771 17.5523 5 17 5L8 5C7.44772 5 7 5.44771 7 6C7 6.55228 7.44772 7 8 7L16 7L16 15C16 15.5523 16.4477 16 17 16C17.5523 16 18 15.5523 18 15L18 6ZM6.70711 17.7071L17.7071 6.70711L16.2929 5.29289L5.29289 16.2929L6.70711 17.7071Z" fill="#8AC15D"/>
+                                            </svg>
+                                        </div>
+                                        <span class="blog-card__date">10.03.2022</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="blog__item">
+                            @@include('components/cards/_blog-card.html',{ "img":"img/blog.webp", })
+                        </div>
+                        <div class="blog__item">
+                            @@include('components/cards/_blog-card.html',{ "img":"img/blog2.webp", })
+                        </div>
+                        <div class="blog__consult">
+                            @@include('components/_consult.html')
+                        </div>
+                        <div class="blog__item">
+                            @@include('components/cards/_blog-card.html',{ "img":"img/blog.webp", })
+                        </div>
+                        <div class="blog__item">
+                            @@include('components/cards/_blog-card.html',{ "img":"img/blog2.webp", })
+                        </div>
+                        <div class="blog__item">
+                            @@include('components/cards/_blog-card.html',{ "img":"img/blog3.webp", })
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class='projects-info projects-info--catalog-item tab-parent'>
+                <div class='container'>
+                    <div class='projects-info__top'>
+                        <div class="projects-info__left">
+                            <div class="projects-info__left-wrap">
+                                <div class="arrow-title">
+                                    <h2 class="projects-info__title title1-bold">
+                                        Проекты
+                                    </h2>
+                                    <div class="projects-info__arrow arrow-title__img"></div>
+                                </div>
+                                <a href="" class="projects-info__link btn-link">
+                                    <span>Смотреть все</span>
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6.45288C18 5.90059 17.5523 5.45288 17 5.45288L8 5.45288C7.44772 5.45288 7 5.9006 7 6.45288C7 7.00516 7.44772 7.45288 8 7.45288L16 7.45288L16 15.4529C16 16.0052 16.4477 16.4529 17 16.4529C17.5523 16.4529 18 16.0052 18 15.4529L18 6.45288ZM6.70711 18.16L17.7071 7.15999L16.2929 5.74577L5.29289 16.7458L6.70711 18.16Z" fill="#3B3938"/>
+                                </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projects-info__right">
+                            <div class="projects-info__item">
+                                <div class="projects-info__item-img">
+                                    <img src="img/garant.svg" alt="Гарантия" title="Гарантия">
+                                </div>
+                                <div class="projects-info__item-content text-large">
+                                    <strong>Предоставляем гарантию! </strong>
+                                    <span>Занимаемся гарантийным обслуживанием домов после строительства.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-info__bottom">
+                    <div class="projects-info__slider project-slider1-container">
+                        <div class='projects-info__slider-prev swiper-button-prev slider-btn2 slider-btn2--prev'>
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00002 13.75C6.90131 13.7506 6.80346 13.7317 6.71208 13.6943C6.62071 13.657 6.5376 13.602 6.46752 13.5325L0.467515 7.53252C0.397219 7.46279 0.341423 7.37984 0.303347 7.28845C0.26527 7.19706 0.245667 7.09903 0.245667 7.00002C0.245667 6.90101 0.26527 6.80298 0.303347 6.71158C0.341423 6.62019 0.397219 6.53724 0.467515 6.46752L6.46752 0.467517C6.60874 0.326289 6.80029 0.246948 7.00002 0.246948C7.19974 0.246948 7.39129 0.326289 7.53251 0.467517C7.67374 0.608745 7.75308 0.800291 7.75308 1.00002C7.75308 1.19974 7.67374 1.39129 7.53251 1.53252L2.05752 7.00002L7.53251 12.4675C7.60281 12.5372 7.65861 12.6202 7.69668 12.7116C7.73476 12.803 7.75436 12.901 7.75436 13C7.75436 13.099 7.73476 13.1971 7.69668 13.2885C7.65861 13.3798 7.60281 13.4628 7.53251 13.5325C7.46243 13.602 7.37932 13.657 7.28795 13.6943C7.19657 13.7317 7.09872 13.7506 7.00002 13.75Z" fill="black"/>
+                            </svg>
+                        </div>
+                        <div class='swiper-container project-slider1'>
+                            <div class='swiper-wrapper'>
+                                <div class='projects-info__slider-item swiper-slide'>
+                                    @@include('components/cards/_project-card.html')
+                                </div>
+                                <div class='projects-info__slider-item swiper-slide'>
+                                    @@include('components/cards/_project-card.html')
+                                </div>
+                                <div class='projects-info__slider-item swiper-slide'>
+                                    @@include('components/cards/_project-card.html')
+                                </div>
+                                <div class='projects-info__slider-item swiper-slide'>
+                                    @@include('components/cards/_project-card.html')
+                                </div>
+                            </div>
+                        </div>
+                        <div class='projects-info__slider-next swiper-button-next slider-btn2 slider-btn2--next'>
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999986 0.24693C1.09869 0.246359 1.19654 0.265277 1.28792 0.302601C1.37929 0.339924 1.4624 0.39492 1.53249 0.46443L7.53249 6.46443C7.60278 6.53415 7.65858 6.6171 7.69665 6.7085C7.73473 6.79989 7.75433 6.89792 7.75433 6.99693C7.75433 7.09594 7.73473 7.19397 7.69665 7.28536C7.65858 7.37676 7.60278 7.45971 7.53249 7.52943L1.53248 13.5294C1.39126 13.6707 1.19971 13.75 0.999985 13.75C0.800259 13.75 0.608713 13.6707 0.467485 13.5294C0.326258 13.3882 0.246916 13.1967 0.246916 12.9969C0.246916 12.7972 0.326258 12.6057 0.467486 12.4644L5.94249 6.99693L0.467486 1.52943C0.39719 1.45971 0.341393 1.37676 0.303317 1.28536C0.26524 1.19397 0.245637 1.09594 0.245637 0.996929C0.245637 0.897921 0.26524 0.799892 0.303317 0.708497C0.341393 0.617103 0.39719 0.534152 0.467487 0.46443C0.537567 0.39492 0.620677 0.339924 0.712055 0.302601C0.803434 0.265277 0.901281 0.246359 0.999986 0.24693Z" fill="black"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class='footer'>
+            @@include('components/_footer.html')
+        </footer>
+    </div>
+    @@include('components/_popups.html')
+    <!--  -->
+    @@include('components/_scripts.html')
+</body>
+
+</html>

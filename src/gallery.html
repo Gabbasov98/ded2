@@ -1,0 +1,92 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Галерея", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="wrapper">
+        <header id="header" class='header'>
+            @@include('components/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='page-top'>
+                <div class='container'>
+                    <div class="breadcrumbs">
+                        <a href="" class="breadcrumbs__item">Главная</a>
+                        <span class="breadcrumbs__item">Галерея</span>
+                    </div>
+                    <div class="page-top__wrap">
+                        <h1 class="page-top__title title1-bold">Галерея </h1>
+                        <div class="page-top__right">
+                            <div class="page-top__instagram">
+                                <div class="page-top__instagram-text">
+                                    <strong>Больше фотографий в </strong>
+                                    <a href=""><img src="img/instagram.svg" alt="Инстаграм" title="Инстаграм"></a>
+                                    <a href=""><img src="img/telegram.svg" alt="Телеграм" title="Телеграм"></a>
+                                    <a href=""><img src="img/vk.svg" alt="Вконтакте" title="Вконтакте"></a>
+                                </div>
+                                <div class="page-top__instagram-text">
+                                    <span>наблюдайте за нашей работой</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='gallery tab-parent'>
+                <div class='container'>
+                    <div class='gallery__tabs tabs'>
+                        <a href="gallery.html" class="tab tab--active">Строящиеся объекты</a>
+                        <a href="gallery2.html" class="tab">Интерьеры</a>
+                        <a href="" class="tab">Фасады домов</a>
+                        <a href="" class="tab">Бани</a>
+                        <a href="" class="tab">Кедр</a>
+                    </div>
+                    <div class="gallery__wrap">
+                        <div class="gallery__item">
+                            @@include('components/cards/_project-card2.html')
+                        </div>
+                        <div class="gallery__item">
+                            @@include('components/cards/_project-card2.html')
+                        </div>
+                        <div class="gallery__item">
+                            @@include('components/cards/_project-card2.html')
+                        </div>
+                        <div class="gallery__item">
+                            @@include('components/cards/_project-card2.html')
+                        </div>
+                        <div class="gallery__consult">
+                            @@include('components/_consult.html')
+                        </div>
+                        <div class="gallery__item">
+                            @@include('components/cards/_project-card2.html')
+                        </div>
+                        <div class="gallery__item">
+                            @@include('components/cards/_project-card2.html')
+                        </div>
+                        <div class="gallery__item">
+                            @@include('components/cards/_project-card2.html')
+                        </div>
+                        <div class="gallery__item">
+                            @@include('components/cards/_project-card2.html')
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='info'>
+                @@include('components/_info.html')
+            </section>
+
+        </main>
+
+        <footer class='footer'>
+            @@include('components/_footer.html')
+        </footer>
+    </div>
+    @@include('components/_popups.html')
+    <!--  -->
+    @@include('components/_scripts.html')
+</body>
+
+</html>

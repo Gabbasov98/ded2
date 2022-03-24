@@ -1,0 +1,92 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Услуги", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <div class="wrapper">
+        <header id="header" class='header'>
+            @@include('components/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='service-item' style="background-image: url(img/sercice-bg.webp);">
+                <div class='container'>
+                    <div class="service-item__inner">
+                        <div class='service-item__top'>
+                            <a href="" class="service-item__back">
+                            ← назад 
+                        </a>
+                            <span class="service-item__subtitle">Услуги </span>
+                        </div>
+                        <div class="service-item__bottom">
+                            <h1 class="service-item__title title1-bold">Сборка сруба Кровельные работы</h1>
+                            <div class="service-item__desc">Краткое описние А ещё акционеры крупнейших компаний указаны как претенденты на роль ключевых факторов. Идейные соображения высшего порядка</div>
+                            <div class="service-item__nav">
+                                <button class="service-item__btn btn btn-yellow-outline" data-modal-target="modal2">
+                                <span>Оставить заявку</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6C18 5.44771 17.5523 5 17 5L8 5C7.44772 5 7 5.44771 7 6C7 6.55228 7.44772 7 8 7L16 7L16 15C16 15.5523 16.4477 16 17 16C17.5523 16 18 15.5523 18 15L18 6ZM6.70711 17.7071L17.7071 6.70711L16.2929 5.29289L5.29289 16.2929L6.70711 17.7071Z" fill="white"/>
+                                </svg>
+                            </button>
+                                <a href="" class="service-item__video">
+                                    <span class="service-item__video-play btn">
+                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.333 9.93458C21.6663 10.7044 21.6663 12.6289 20.333 13.3987L3.833 22.925C2.49967 23.6948 0.833007 22.7325 0.833007 21.1929L0.833008 2.14034C0.833008 0.600743 2.49967 -0.361506 3.83301 0.408295L20.333 9.93458Z" fill="#FFDF8B"/>
+                                    </svg>
+                                </span>
+                                    <span class="service-item__video-text">
+                                    Смотерть видео
+                                </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='service'>
+                <div class='container'>
+                    <div class='service__items'>
+                        <div class="service__item">
+                            @@include('components/_service.html')
+                        </div>
+                        <div class="service__item">
+                            @@include('components/_service.html')
+                        </div>
+                        <div class="service__item">
+                            @@include('components/_service.html')
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='consult2'>
+                <div class='container'>
+                    @@include('components/_consult2.html')
+                </div>
+            </section>
+
+            <section class='decor'>
+                <div class='container'>
+                    <div class="decor__arrow-title arrow-title">
+                        <h2 class="decor__title title2-bold">
+                            Галерея
+                        </h2>
+                        <div class="arrow-title__img"></div>
+                    </div>
+                </div>
+                <div class='decor__inner'>
+                    @@include('components/_gallery-slider.html')
+                </div>
+            </section>
+        </main>
+
+        <footer class='footer'>
+            @@include('components/_footer.html')
+        </footer>
+    </div>
+    @@include('components/_popups.html')
+    <!--  -->
+    @@include('components/_scripts.html')
+</body>
+
+</html>

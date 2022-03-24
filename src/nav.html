@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Навигация</title>
+</head>
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+    }
+    
+    .wrapper strong {
+        font-size: 30px;
+        display: block;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
+    strong:first-child {
+        margin-top: 0;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 400px;
+        height: 65px;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <strong>Основные страницы</strong>
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка проекта
+        </a>
+        <a href="services.html" style="display: block; margin-bottom: 20px;">
+            Услуги
+        </a>
+        <a href="service-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка услуги
+        </a>
+        <a href="gallery.html" style="display: block; margin-bottom: 20px;">
+            Галерея
+        </a>
+        <a href="gallery2.html" style="display: block; margin-bottom: 20px;">
+            Галерея 2
+        </a>
+        <a href="gallery3.html" style="display: block; margin-bottom: 20px;">
+            Галерея 3
+        </a>
+        <a href="blog.html" style="display: block; margin-bottom: 20px;">
+            Блог
+        </a>
+        <a href="blog-item.html" style="display: block; margin-bottom: 20px;">
+            Блог карточка
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О нас
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <a href="feedback.html" style="display: block; margin-bottom: 20px;">
+            Отзывы
+        </a>
+        <button data-modal-target="modal1" style="border: 2px solid #000;margin-bottom: 20px;">
+            modal1
+        </button>
+        <button data-modal-target="modal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            modal2
+        </button>
+        <button data-modal-target="modal3" style="border: 2px solid #000;margin-bottom: 20px;">
+            modal3
+        </button>
+        <button data-modal-target="modal4" style="border: 2px solid #000;margin-bottom: 20px;">
+            modal4
+        </button>
+    </div>
+
+    @@include('components/_popups.html') @@include('components/_scripts.html')
+</body>
+
+</html>
