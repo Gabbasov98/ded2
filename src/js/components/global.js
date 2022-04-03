@@ -97,7 +97,6 @@ $(document).ready(function() {
             $(this).find(`.project-card__img[data-tab-path="${path+1}"`).addClass("project-card__img--active")
             $(this).find(".project-card__pag-item").removeClass("project-card__pag-item--active")
             $(this).find(`.project-card__pag-item[data-tab-path="${path+1}"`).addClass("project-card__pag-item--active")
-            console.log(path)
             if (path < length) {
                 path++
             }
