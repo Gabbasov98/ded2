@@ -25,32 +25,10 @@ function catalogGallery() {
     });
 }
 
-function decorSlider() {
-    var swiper = new Swiper('.decor .swiper-container', {
-        slidesPerView: 3,
-        spaceBetween: 18,
-        navigation: {
-            nextEl: '.decor .swiper-button-next',
-            prevEl: '.decor .swiper-button-prev',
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-            },
-            768: {
-                slidesPerView: 2,
-            },
-            992: {
-                slidesPerView: 3,
-            },
-        }
-    })
-}
+
 
 $(document).ready(function() {
     catalogGallery()
-    decorSlider()
-
 
     $(".calc__item input").change(function() {
         let wall = +$("input[name='wall']:checked").val() || 0

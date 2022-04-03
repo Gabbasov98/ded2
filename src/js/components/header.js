@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function header() {
 
     $(".header__search-btn").click(function() {
         console.log(true)
@@ -68,23 +68,22 @@ $(document).ready(function() {
         $(this).siblings("input").val("")
     })
 
-});
-
-
-function onIn() {
-    if (window.innerWidth > 992) {
-        let el = $(this)
-        setTimeout(function() {
-            if (el.is(':hover')) {
-                console.log(el)
-                el.addClass("nav__item--active")
-            }
-        }, 200);
+    function onIn() {
+        if (window.innerWidth > 992) {
+            let el = $(this)
+            setTimeout(function() {
+                if (el.is(':hover')) {
+                    console.log(el)
+                    el.addClass("nav__item--active")
+                }
+            }, 200);
+        }
     }
-}
 
-function onOut() {
-    if (window.innerWidth > 992) {
-        $(this).removeClass("nav__item--active")
+    function onOut() {
+        if (window.innerWidth > 992) {
+            $(this).removeClass("nav__item--active")
+        }
     }
-}
+
+};

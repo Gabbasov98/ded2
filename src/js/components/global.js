@@ -1,4 +1,27 @@
+function decorSlider() {
+    var swiper = new Swiper('.decor .swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 18,
+        navigation: {
+            nextEl: '.decor .swiper-button-next',
+            prevEl: '.decor .swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+        }
+    })
+}
+
 $(document).ready(function() {
+    decorSlider()
 
     $('input[type="tel"]').mask('+7 (999) 999-9999', { placeholder: '+7          -    ' });
 
@@ -149,7 +172,6 @@ $(document).ready(function() {
     $('[data-fancybox="gallery"]').fancybox({
         buttons: [
             'download',
-            // 'thumbs',
             'close'
         ]
     });
@@ -203,18 +225,13 @@ $(document).ready(function() {
     });
 
 
-
-
     $("[data-bg-style]").each(function(index, el) {
         let bg = $(el).attr("data-bg-style")
-        console.log(bg, el)
         $(el).css('background-image', bg);
     })
     $("[data-src]").each(function(index, el) {
         let img = $(el).attr("data-src")
-
         $(el).attr("src", img)
-        console.log(el)
     })
 })
 
