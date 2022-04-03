@@ -420,6 +420,14 @@ table {
             text-decoration: underline;
         }
     }
+    &--error {
+        label {
+            color: #F51E09;
+            &::before {
+                border-color: #F51E09;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
