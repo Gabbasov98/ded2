@@ -153,13 +153,6 @@ $(document).ready(function() {
             'close'
         ]
     });
-    // $('[data-fancybox="images"]').fancybox({
-    //     buttons : [
-    //       'download',
-    //       'thumbs',
-    //       'close'
-    //     ]
-    //   });
 
     let val = $(".form-group input").val()
     let val2 = $(".form-group textarea").val()
@@ -208,6 +201,15 @@ $(document).ready(function() {
             closeModal()
         })
     });
+
+
+
+
+    $("[data-bg-style]").each(function(index, el) {
+        let bg = $("[data-bg-style]").attr("data-bg-style")
+        console.log(bg, el)
+        $(el).css('background-image', bg);
+    })
 })
 
 
