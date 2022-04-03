@@ -206,9 +206,15 @@ $(document).ready(function() {
 
 
     $("[data-bg-style]").each(function(index, el) {
-        let bg = $("[data-bg-style]").attr("data-bg-style")
+        let bg = $(el).attr("data-bg-style")
         console.log(bg, el)
         $(el).css('background-image', bg);
+    })
+    $("[data-src]").each(function(index, el) {
+        let img = $(el).attr("data-src")
+
+        $(el).attr("src", img)
+        console.log(el)
     })
 })
 
