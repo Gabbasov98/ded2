@@ -1,6 +1,6 @@
 @import 'vars';
 .video-feedback {
-    padding: 40px 0 45px;
+    padding: 40px 0 0;
     &__inner {
         display: flex;
         align-items: center;
@@ -12,6 +12,7 @@
         margin: 0 16px;
         overflow: hidden;
         width: calc(100% - 92px);
+        padding-bottom: 45px;
     }
     &__next,
     &__prev {
@@ -120,13 +121,13 @@
     border-bottom: 1px solid #C4C4C4;
     position: relative;
     &:not(.feedback-info--active) {
-        .feedback-info__desc {
-            background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.44) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-        }
+        // .feedback-info__desc {
+        //     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.44) 100%);
+        //     -webkit-background-clip: text;
+        //     -webkit-text-fill-color: transparent;
+        //     background-clip: text;
+        //     text-fill-color: transparent;
+        // }
     }
     &--active {
         flex-wrap: wrap;
@@ -293,7 +294,7 @@
 
 @media screen and (max-width: 992px) {
     .video-feedback {
-        padding: 20px 0 30px;
+        padding-top: 20px;
         &__inner {
             width: calc(100% + 15px);
             margin-top: 20px;
@@ -301,6 +302,7 @@
         .swiper-container {
             width: 100%;
             margin: 0;
+            padding-bottom: 30px;
         }
         &__next,
         &__prev {

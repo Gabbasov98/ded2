@@ -146,7 +146,20 @@ $(document).ready(function() {
         }
     });
 
-    $('[data-fancybox="gallery"]').fancybox();
+    $('[data-fancybox="gallery"]').fancybox({
+        buttons: [
+            'download',
+            // 'thumbs',
+            'close'
+        ]
+    });
+    // $('[data-fancybox="images"]').fancybox({
+    //     buttons : [
+    //       'download',
+    //       'thumbs',
+    //       'close'
+    //     ]
+    //   });
 
     let val = $(".form-group input").val()
     let val2 = $(".form-group textarea").val()

@@ -522,6 +522,11 @@
     .service-card {
         border: 1px solid #F1F1F1;
         box-shadow: none;
+        &__list {
+            &--grid {
+                grid-template-columns: 1fr;
+            }
+        }
     }
     .service-item {
         &__nav {
@@ -532,6 +537,21 @@
             max-width: 100%;
             font-size: 16px;
         }
+    }
+    .order1 {
+        order: 1;
+    }
+    .order2 {
+        order: 2;
+    }
+    .order3 {
+        order: 3;
+    }
+    .order4 {
+        order: 4;
+    }
+    .order5 {
+        order: 5;
     }
 }
 
@@ -553,6 +573,5 @@
         &__step {
             margin-left: 70px;
         }
-        &__top {}
     }
 }

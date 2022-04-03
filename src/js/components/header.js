@@ -48,11 +48,14 @@ $(document).ready(function() {
     })
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 20) {
-            $(".header--sticky").removeClass("header--index")
-        } else {
-            $(".header--sticky").addClass("header--index")
+        if (window.innerWidth > 992) {
+            if ($(this).scrollTop() > 20) {
+                $(".header--sticky").removeClass("header--index")
+            } else {
+                $(".header--sticky").addClass("header--index")
+            }
         }
+
     })
 
     if ($(this).scrollTop() > 20) {

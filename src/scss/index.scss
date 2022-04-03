@@ -102,6 +102,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
+        flex-grow: 1;
     }
     &__title {
         font-weight: 600;
@@ -137,6 +138,7 @@
         left: 280px;
         bottom: 0;
         width: 534px;
+        pointer-events: none;
     }
     &__info {
         margin-top: auto;
@@ -155,6 +157,7 @@
 
 .why {
     padding: 90px 0;
+    overflow-x: hidden;
     .swiper-container {
         overflow: hidden;
     }
@@ -260,6 +263,7 @@
 .projects-info {
     padding: 60px 0 0;
     background: #EDEFEA;
+    overflow-x: hidden;
     &__top {
         display: flex;
     }
@@ -312,6 +316,7 @@
 
 .team {
     padding: 80px 0 89px;
+    overflow-x: hidden;
     &__top {
         display: flex;
         justify-content: space-between;
@@ -761,6 +766,8 @@
         &__img {
             width: 485px;
             left: 255px;
+            left: unset;
+            right: -90px;
         }
     }
 }
@@ -1002,7 +1009,7 @@
             width: 250px;
         }
         &__img {
-            left: 225px;
+            right: -100px;
             width: 320px;
         }
     }

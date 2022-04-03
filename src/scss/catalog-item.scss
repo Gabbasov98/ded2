@@ -24,19 +24,21 @@
         height: 40px;
         padding: 0 14px;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         background: #FFFFFF;
         border-radius: 5px;
+        padding-bottom: 5px;
         &-title {
             font-size: 16px;
             color: #777777;
-            line-height: 162%;
+            // line-height: 162%;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
             flex-grow: 1;
             min-width: 0;
+            padding-bottom: 2px;
         }
         &-desc {
             font-size: 30px;
@@ -149,6 +151,7 @@
     }
     &__item {
         &-img {
+            border: 1px solid #C4C4C4;
             img {
                 width: 100%;
                 display: block;
@@ -825,6 +828,9 @@
             &-title {
                 margin-top: 0;
                 padding-left: 10px;
+            }
+            &-img {
+                border: none;
             }
         }
     }

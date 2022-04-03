@@ -17,6 +17,10 @@
                 background: #EDEFEA;
                 box-shadow: none;
             }
+            &__link span,
+            &__desc {
+                text-decoration: underline;
+            }
         }
     }
     &__top {

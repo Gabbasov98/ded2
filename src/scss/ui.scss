@@ -231,12 +231,16 @@
         transition: all .3s;
         font-weight: bold;
         border-bottom: 1px solid #C4C4C4;
+        pointer-events: none;
         &::placeholder {
             color: #777777;
             font-weight: 400;
         }
     }
     &--active {
+        .custom-select__target {
+            pointer-events: none;
+        }
         input {}
         .custom-select__dropdown {
             display: block;
@@ -431,6 +435,9 @@ table {
         &__instagram {
             width: unset;
         }
+    }
+    .breadcrumbs {
+        display: none;
     }
 }
 

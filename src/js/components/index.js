@@ -54,7 +54,7 @@ function projectSlider() {
                 slidesPerView: 2,
                 spaceBetween: 32,
             },
-            1900: {
+            1850: {
                 slidesPerView: 3,
             },
         }
