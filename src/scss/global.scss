@@ -110,9 +110,12 @@ body {
 .btn-black {
     border: 1px solid #3B3938;
     background: #3B3938;
-    color: #FFFFFF;
+    color: $primary-color;
     font-weight: 600;
     font-size: 18px;
+    path {
+        fill: #fff;
+    }
     &:hover {
         background: transparent;
         color: #000000;

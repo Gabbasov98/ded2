@@ -37,9 +37,42 @@ $(document).ready(function() {
         let window = +$("input[name='window']:checked").val() || 0
 
         let all = wall + base + roof + window
-        console.log(wall, base, roof, window);
+            // console.log(wall, base, roof, window);
 
         $(".calc__all-price-desc").html(`${all.toLocaleString('ru-RU')} ₽`)
 
     })
+
+
+
+    // $(".calc__item-question").click(function() {
+    //     e.stopPropagation()
+
+
+    // })
+
+
 })
+
+function openCalcInfo(title, desc) {
+
+    $(".calc-modal__title").html(title)
+    $(".calc-modal__desc").html(desc)
+    $(".calc-modal").addClass("calc-modal--active")
+    $("body").append(`<div class="modal-backdrop"></div>`)
+    $("body").addClass("fixed-body")
+    $(".calc-modal__close").click(function() {
+        closeModal2()
+    })
+
+    $(".modal-backdrop").click(function() {
+        closeModal2()
+    })
+
+}
+
+function closeModal2() {
+    $(".calc-modal").removeClass("calc-modal--active")
+    $(".modal-backdrop").remove()
+    $("body").removeClass("fixed-body")
+}

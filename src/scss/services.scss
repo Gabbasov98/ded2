@@ -477,7 +477,13 @@
         &__item {
             display: block;
             &-icon {
-                display: none;
+                width: 24px;
+                height: 24px;
+                margin-top: 3px;
+                svg {
+                    width: 16px;
+                    height: auto;
+                }
             }
             &-right {
                 width: 100%;
