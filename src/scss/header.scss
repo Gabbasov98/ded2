@@ -224,7 +224,7 @@
             position: absolute;
             top: 0;
             padding-top: 55px;
-            width: 220px;
+            min-width: 220px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 5;
@@ -241,7 +241,7 @@
             display: block;
             white-space: nowrap;
             &:hover {
-                font-weight: 700;
+                color: $primary-color;
             }
             &:not(:last-child) {
                 margin-bottom: 16px;
