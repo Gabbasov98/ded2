@@ -297,6 +297,11 @@
                 }
             }
         }
+        &--not-detail {
+            .calc__item-more {
+                display: none;
+            }
+        }
     }
     &__download {
         margin-left: 55px;
@@ -323,7 +328,7 @@
             align-items: center;
         }
         &-btn {
-            width: 270px;
+            width: 300px;
             height: 50px;
             border-radius: 45px;
             svg {
