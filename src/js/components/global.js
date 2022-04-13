@@ -210,7 +210,6 @@ $(document).ready(function() {
 
     $('[data-modal-target]').click(function() {
         let id = $(this).attr("data-modal-target")
-        console.log(id)
         $("body").append(`<div class="modal-backdrop"></div>`)
         $(`#${id}`).addClass("modal--active")
         $("body").addClass("fixed-body")
@@ -232,6 +231,22 @@ $(document).ready(function() {
         let img = $(el).attr("data-src")
         $(el).attr("src", img)
     })
+
+
+    $(".file-input input").change(function() {
+        var filename = $(this).val().replace(/C:\\fakepath\\/i, '')
+        console.log(filename)
+
+        $(this).parents(".file-input").find(".file-input__name").html(filename)
+        $(this).parents(".file-input").addClass("file-input--filled")
+    })
+
+    $(".file-input__delete").click(function() {
+        $(this).parents(".file-input").find(".file-input__name").html('')
+        $(this).parents(".file-input").find("input").val('')
+        $(this).parents(".file-input").removeClass("file-input--filled")
+    })
+
 })
 
 

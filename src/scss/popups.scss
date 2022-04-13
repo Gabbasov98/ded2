@@ -133,6 +133,77 @@
     }
 }
 
+.modal5 {
+    width: 670px;
+    .modal {
+        &__form {
+            &-bottom {
+                margin-top: 16px;
+            }
+            &-btn {
+                width: 321px !important;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.file-input {
+    &__upload {
+        position: relative;
+        overflow: hidden;
+        input {
+            opacity: 0;
+            position: absolute;
+            cursor: pointer;
+            width: 300%;
+            height: 100%;
+            z-index: 2;
+            left: -200%;
+            top: 0;
+            &:hover+label {
+                span {
+                    text-decoration: none;
+                }
+            }
+        }
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            line-height: 200%;
+            cursor: pointer;
+            position: relative;
+            span {
+                text-decoration: underline;
+            }
+            svg {
+                margin-right: 6px;
+            }
+        }
+    }
+    &__uploaded {
+        display: none;
+        align-items: center;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 200%;
+    }
+    &__delete {
+        margin-right: 6px;
+    }
+    &--filled {
+        .file-input__upload {
+            display: none;
+        }
+        .file-input__uploaded {
+            display: flex;
+        }
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .modal {
         &__img {
@@ -158,7 +229,8 @@
 }
 
 @media screen and (min-width: 600px) {
-    .modal2 {
+    .modal2,
+    .modal5 {
         .modal {
             &__form {
                 grid-template-columns: 1fr 1fr;
@@ -179,6 +251,15 @@
             &__textarea {
                 grid-column: 2/3;
                 grid-row: 1/4;
+            }
+        }
+    }
+    .modal5 {
+        .modal {
+            &__check {
+                margin-top: 14px;
+                grid-column: 1/3;
+                max-width: 100% !important;
             }
         }
     }

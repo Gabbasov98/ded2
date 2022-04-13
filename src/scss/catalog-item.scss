@@ -190,6 +190,8 @@
         }
         &-right {
             width: calc(100% - 328px);
+        }
+        &-variants {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 30px;
@@ -223,7 +225,7 @@
             }
         }
         label {
-            padding: 10px 8px 10px 36px;
+            padding: 10px 8px 45px 36px;
             position: relative;
             display: block;
             background: rgba(#C4C4C4, 0.5);
@@ -268,6 +270,30 @@
             &:hover {
                 path {
                     fill: #3B3938;
+                }
+            }
+        }
+        &-more {
+            position: absolute;
+            bottom: 12px;
+            left: 36px;
+            color: #777777;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 186%;
+            background-color: transparent;
+            &-hidden {
+                display: none;
+            }
+            &--active {
+                .calc__item-more-hidden {
+                    display: unset;
+                }
+                .calc__item-more-show {
+                    display: none;
+                }
+                svg {
+                    transform: rotate(180deg);
                 }
             }
         }
@@ -318,6 +344,52 @@
                 line-height: 120%;
                 font-weight: 800;
             }
+        }
+    }
+}
+
+.calc-detail {
+    background: #FFFFFF;
+    padding: 20px 25px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin-top: 11px;
+    display: none;
+    &--active {
+        display: block;
+    }
+    ul {
+        &:not(:last-child) {
+            margin-bottom: 13px;
+        }
+        li {
+            font-size: 14px;
+            line-height: 171%;
+            padding-left: 34px;
+            &::before {
+                background: #3B3938;
+                border-radius: 0%;
+                width: 12px;
+                height: 12px;
+                top: 5px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 7px;
+            }
+        }
+    }
+    p {
+        font-size: 14px;
+        line-height: 157%;
+    }
+    &__close {
+        color: #C4C4C4;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 186%;
+        margin-top: 20px;
+        svg {
+            margin-left: 8px;
         }
     }
 }

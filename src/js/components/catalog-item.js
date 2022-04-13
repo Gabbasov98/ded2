@@ -45,13 +45,33 @@ $(document).ready(function() {
 
 
 
-    // $(".calc__item-question").click(function() {
-    //     e.stopPropagation()
+    $(".calc__item-more").click(function() {
+
+        if ($(this).hasClass("calc__item-more--active")) {
+            $(".calc__item-more").removeClass("calc__item-more--active")
+        } else {
+            $(".calc__item-more").removeClass("calc__item-more--active")
+            $(this).addClass("calc__item-more--active")
+        }
+    })
+
+    $("[data-calc-detail]").click(function() {
+        let id = $(this).attr("data-calc-detail")
 
 
-    // })
 
+        if ($(`#${id}`).hasClass("calc-detail--active")) {
+            $(".calc-detail").removeClass("calc-detail--active")
+        } else {
+            $(".calc-detail").removeClass("calc-detail--active")
+            $(`#${id}`).addClass("calc-detail--active")
+        }
+    })
 
+    $(".calc-detail__close").click(function() {
+        $(".calc-detail").removeClass("calc-detail--active")
+        $(".calc__item-more").removeClass("calc__item-more--active")
+    })
 })
 
 function openCalcInfo(title, desc) {
