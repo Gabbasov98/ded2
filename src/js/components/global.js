@@ -247,6 +247,13 @@ $(document).ready(function() {
         $(this).parents(".file-input").removeClass("file-input--filled")
     })
 
+    $("[data-video-src]").click(function() {
+        let videoSrc = $(this).attr("data-video-src")
+        console.log($("#myVideo source"))
+
+        $("#myVideo source").attr("src", videoSrc)
+    })
+
 })
 
 

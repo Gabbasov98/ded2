@@ -107,6 +107,7 @@
     }
     &__gallery {
         .swiper-slide {
+            min-height: 75px;
             img {
                 width: 100%;
                 display: block;
@@ -114,6 +115,7 @@
         }
         &-small {
             margin: 0 16px;
+            width: 100%;
         }
         &-bottom {
             display: flex;
@@ -286,6 +288,7 @@
                 display: none;
             }
             &--active {
+                color: #C4C4C4;
                 .calc__item-more-hidden {
                     display: unset;
                 }
@@ -294,6 +297,9 @@
                 }
                 svg {
                     transform: rotate(180deg);
+                }
+                path {
+                    fill: #C4C4C4;
                 }
             }
         }
@@ -838,7 +844,7 @@
             &-title {
                 font-size: 18px;
             }
-            &-right {
+            &-variants {
                 gap: 12px;
                 grid-template-columns: 1fr;
             }
