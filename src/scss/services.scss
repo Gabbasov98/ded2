@@ -356,8 +356,16 @@
             }
         }
         &-slide {
+            height: 275px;
+            position: relative;
             img {
                 width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                object-fit: cover;
             }
         }
     }
@@ -504,6 +512,9 @@
                     bottom: 12px;
                     right: 12px;
                 }
+                .swiper-slide {
+                    height: 320px;
+                }
             }
         }
     }
@@ -561,6 +572,14 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+    .service {
+        .swiper-slide {
+            height: 260px;
+        }
+    }
+}
+
 @media screen and (max-width: 380px) {
     .service-card {
         &__link {
@@ -578,6 +597,11 @@
         }
         &__step {
             margin-left: 70px;
+        }
+    }
+    .service {
+        .swiper-slide {
+            height: 220px;
         }
     }
 }

@@ -27,8 +27,16 @@
         padding: 0 20px;
         position: relative;
         z-index: 2;
+        height: 205px;
+        overflow: hidden;
         img {
             width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
             // max-height: 200px;
         }
     }
@@ -269,6 +277,11 @@
             }
         }
     }
+    .blog-card {
+        &__top {
+            height: 240px;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -365,6 +378,15 @@
             &::before {
                 width: 40px;
                 height: 40px;
+            }
+        }
+    }
+    .blog-card {
+        &__top {
+            height: unset;
+            img {
+                position: static;
+                transform: unset;
             }
         }
     }

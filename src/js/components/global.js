@@ -177,16 +177,23 @@ $(document).ready(function() {
 
     let val = $(".form-group input").val()
     let val2 = $(".form-group textarea").val()
-    if (val) {
-        $(this).addClass("input-active")
-    } else {
-        $(this).removeClass("input-active")
-    }
-    if (val2) {
-        $(this).addClass("input-active")
-    } else {
-        $(this).removeClass("input-active")
-    }
+
+    $(".form-group input").each(function(index, el) {
+        if (val) {
+            $(el).addClass("input-active")
+        } else {
+            $(el).removeClass("input-active")
+        }
+    });
+
+    $(".form-group textarea").each(function(index, el) {
+        if (val2) {
+            $(el).addClass("input-active")
+        } else {
+            $(el).removeClass("input-active")
+        }
+    });
+
     $(".form-group input").change(function() {
         let val = $(this).val()
         console.log(val)

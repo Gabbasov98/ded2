@@ -210,10 +210,17 @@
     }
     &__item {
         width: 20px;
-        max-height: 602px;
+        height: 602px;
         overflow: hidden;
+        position: relative;
         img {
+            position: absolute;
             width: 100%;
+            height: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
         }
     }
     &__top {
@@ -278,6 +285,7 @@
     }
     &__link {
         margin-top: 10px;
+        white-space: nowrap;
     }
     &__item {
         display: flex;
@@ -296,15 +304,16 @@
         }
     }
     &__slider {
-        padding: 0 3px;
+        padding: 0 50px;
         margin-top: 50px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
         &-prev,
         &-next {
-            margin-top: 0;
-            position: static;
+            // margin-top: 0;
+            // position: static;
         }
         &>.swiper-container {
             overflow: hidden;
@@ -398,7 +407,7 @@
     &__img {
         img {
             width: 100%;
-            min-height: 182px;
+            height: 182px;
         }
     }
     &__name {
@@ -801,7 +810,7 @@
             width: 720px;
         }
         &__item {
-            max-height: 535px;
+            height: 535px;
         }
     }
     .projects-info {
@@ -924,7 +933,7 @@
             margin-right: 60px;
         }
         &__item {
-            max-height: 408px;
+            height: 408px;
         }
         &__title {
             max-width: 400px;
@@ -1117,7 +1126,7 @@
             }
         }
         &__item {
-            max-height: 445px;
+            height: 445px;
             width: 600px;
         }
         &__top {
@@ -1412,7 +1421,7 @@
     }
     .why {
         &__item {
-            max-height: 330px;
+            height: 330px;
             width: 445px;
         }
     }
@@ -1447,7 +1456,7 @@
 @media screen and (max-width: 576px) {
     .why {
         &__item {
-            max-height: 211px;
+            height: 211px;
             width: 285px;
         }
     }
@@ -1475,7 +1484,7 @@
             width: 100%;
         }
         &__item {
-            max-height: 198px;
+            height: 198px;
             img {
                 height: 100%;
             }
