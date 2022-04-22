@@ -142,7 +142,7 @@ function teamSlider() {
 function indexFeedbackSlider() {
     var swiper = new Swiper('.index-feedback .swiper-container', {
         slidesPerView: 1,
-        autoplay: true,
+        // autoplay: true,
         pagination: {
             el: '.index-feedback .swiper-pagination',
             type: 'bullets',

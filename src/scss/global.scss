@@ -254,11 +254,15 @@ a:visited {
     transform: translate(-50%, -50%) !important;
     overflow: hidden;
     img {
-        // max-height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        // width: auto;
+        display: block;
+        // height: auto;
         // height: auto;
         top: 50%;
         transform: translateY(-50%);
-        object-fit: cover;
+        // object-fit: cover;
     }
 }
 
