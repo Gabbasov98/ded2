@@ -23,7 +23,7 @@ function decorSlider() {
 $(document).ready(function() {
     decorSlider()
 
-    $('input[type="tel"]').mask('+7 (999) 999-9999', { placeholder: '+7          -    ' });
+    $('input[type="tel"]').mask('+7 (999) 999-9999', { autoclear: false }, { placeholder: '+7          -    ' });
 
     let cardSlidersArray = []
 
@@ -175,11 +175,9 @@ $(document).ready(function() {
         ]
     });
 
-    let val = $(".form-group input").val()
-    let val2 = $(".form-group textarea").val()
 
     $(".form-group input").each(function(index, el) {
-        if (val) {
+        if ($(el).val()) {
             $(el).addClass("input-active")
         } else {
             $(el).removeClass("input-active")
@@ -187,7 +185,7 @@ $(document).ready(function() {
     });
 
     $(".form-group textarea").each(function(index, el) {
-        if (val2) {
+        if ($(el).val()) {
             $(el).addClass("input-active")
         } else {
             $(el).removeClass("input-active")

@@ -29,8 +29,14 @@ function catalogGallery() {
 
 $(document).ready(function() {
     catalogGallery()
+    calcPrice()
 
     $(".calc__item input").change(function() {
+        calcPrice()
+
+    })
+
+    function calcPrice() {
         let wall = +$("input[name='wall']:checked").val() || 0
         let base = +$("input[name='base']:checked").val() || 0
         let roof = +$("input[name='roof']:checked").val() || 0
@@ -40,10 +46,7 @@ $(document).ready(function() {
             // console.log(wall, base, roof, window);
 
         $(".calc__all-price-desc").html(`${all.toLocaleString('ru-RU')} ₽`)
-
-    })
-
-
+    }
 
     $(".calc__item-more").click(function() {
 

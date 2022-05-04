@@ -246,27 +246,26 @@ a:visited {
     opacity: 0.7;
 }
 
-.fancybox-content {
-    width: calc(100vw - 100px) !important;
-    height: calc(100vh - 180px) !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    overflow: hidden;
-    img {
-        max-height: 100%;
-        max-width: 100%;
-        // width: auto;
-        display: block;
-        // height: auto;
-        // height: auto;
-        top: 50%;
-        transform: translateY(-50%);
-        // object-fit: cover;
-    }
-}
-
-.fancybox-is-open .fancybox-bg {
-    opacity: 1;
-    background: #000;
-}
+// .fancybox-content {
+//     width: calc(100vw - 100px) !important;
+//     height: calc(100vh - 180px) !important;
+//     top: 50% !important;
+//     left: 50% !important;
+//     transform: translate(-50%, -50%) !important;
+//     overflow: hidden;
+//     img {
+//         max-height: 100%;
+//         max-width: 100%;
+//         // width: auto;
+//         display: block;
+//         // height: auto;
+//         // height: auto;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         // object-fit: cover;
+//     }
+// }
+// .fancybox-is-open .fancybox-bg {
+//     opacity: 1;
+//     background: #000;
+// }
