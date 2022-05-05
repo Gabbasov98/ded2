@@ -10,6 +10,12 @@
     &__all {
         display: none;
     }
+    &__item {
+        max-height: 450px;
+        .swiper-slide {
+            max-height: 356px;
+        }
+    }
 }
 
 .consult-banner {

@@ -56,7 +56,11 @@
     }
     &__item {
         position: relative;
+        overflow: hidden;
+        max-height: 545px;
         img {
+            min-height: 100%;
+            object-fit: cover;
             width: 100%;
             display: block;
             filter: drop-shadow(0px 10px 69px rgba(0, 0, 0, 0.35));
@@ -274,6 +278,10 @@
     &__top {
         display: flex;
     }
+    &__bottom {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
     &__right {
         margin-left: 50px;
         max-width: 510px;
@@ -310,15 +318,13 @@
         align-items: center;
         justify-content: space-between;
         position: relative;
-        &-prev,
-        &-next {
-            // margin-top: 0;
-            // position: static;
-        }
         &>.swiper-container {
             overflow: hidden;
             margin: 0 30px;
             padding-bottom: 60px;
+            .swiper-slide {
+                max-height: 485px;
+            }
         }
     }
 }

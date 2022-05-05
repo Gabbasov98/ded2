@@ -3,6 +3,8 @@
     height: 100%;
     &__top {
         position: relative;
+        // max-height: calc(100% - 90px);
+        // overflow: hidden;
         &:hover {
             .swiper-pagination {
                 opacity: 1;
@@ -16,9 +18,11 @@
             width: 100% !important;
             height: 100%;
             height: auto;
+            max-height: 100%;
         }
         .swiper-container {
             overflow: hidden;
+            height: 100%;
         }
         .swiper-button-next,
         .swiper-button-prev {
