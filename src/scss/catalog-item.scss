@@ -552,7 +552,12 @@
     padding: 45px 0;
     &__inner {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
     &__item {
@@ -810,7 +815,8 @@
         }
     }
     .info {
-        &__inner {
+        &__inner,
+        &__items {
             gap: 15px;
         }
     }
@@ -924,7 +930,8 @@
     }
     .info {
         padding: 30px 0;
-        &__inner {
+        &__inner,
+        &__items {
             grid-template-columns: 1fr;
         }
     }
