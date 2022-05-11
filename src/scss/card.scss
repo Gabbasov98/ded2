@@ -5,6 +5,7 @@
         position: relative;
         // max-height: calc(100% - 90px);
         // overflow: hidden;
+        height: 350px;
         &:hover {
             .swiper-pagination {
                 opacity: 1;
@@ -19,10 +20,17 @@
             height: 100%;
             height: auto;
             max-height: 100%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+            }
         }
         .swiper-container {
             overflow: hidden;
             height: 100%;
+            width: 100%;
         }
         .swiper-button-next,
         .swiper-button-prev {
@@ -287,6 +295,9 @@
         &__pag {
             display: none;
         }
+        &__top {
+            height: 250px;
+        }
     }
     .project-card2 {
         .project-card {
@@ -323,6 +334,14 @@
                     height: auto;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project-card {
+        &__top {
+            height: 200px;
         }
     }
 }

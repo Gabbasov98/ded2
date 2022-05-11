@@ -2,6 +2,9 @@
     padding: 40px 0;
     &__tabs {
         margin-bottom: 40px;
+        .tab {
+            margin-top: 20px;
+        }
     }
     &__wrap {
         display: grid;

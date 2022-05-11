@@ -3,7 +3,7 @@
     padding-top: 40px;
     &__wrap {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, calc(50% - 15px));
         gap: 30px;
         margin-top: 30px;
     }
