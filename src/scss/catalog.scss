@@ -6,6 +6,7 @@
         grid-template-columns: repeat(2, calc(50% - 15px));
         gap: 30px;
         margin-top: 30px;
+        // padding-bottom: 80px;
     }
     &__all {
         display: none;
@@ -101,6 +102,14 @@
                 width: 100%;
                 margin-left: 0;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .catalog {
+        &__wrap {
+            padding-bottom: 70px;
         }
     }
 }
@@ -234,6 +243,7 @@
     .catalog {
         &__wrap {
             grid-template-columns: 100%;
+            padding-bottom: 0;
         }
     }
     .consult-banner {

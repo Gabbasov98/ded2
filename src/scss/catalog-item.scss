@@ -304,7 +304,7 @@
                 display: none;
             }
             &--active {
-                color: #C4C4C4;
+                // color: #C4C4C4;
                 .calc__item-more-hidden {
                     display: unset;
                 }
@@ -315,7 +315,7 @@
                     transform: rotate(180deg);
                 }
                 path {
-                    fill: #C4C4C4;
+                    // fill: #C4C4C4;
                 }
             }
         }
@@ -410,13 +410,16 @@
         line-height: 157%;
     }
     &__close {
-        color: #C4C4C4;
+        color: #777777;
         font-weight: 700;
         font-size: 14px;
         line-height: 186%;
         margin-top: 20px;
         svg {
             margin-left: 8px;
+        }
+        path {
+            fill: #777;
         }
     }
 }
