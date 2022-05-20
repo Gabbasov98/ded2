@@ -209,6 +209,7 @@
     }
     &__slider {
         position: relative;
+        max-height: 280px;
         img {
             width: 100%;
             height: 280px;
@@ -281,9 +282,10 @@
         display: none;
         position: relative;
         margin-top: 18px;
+        max-height: 280px;
         img {
             width: 100%;
-            min-height: 100%;
+            height: 100%;
             object-fit: cover;
         }
         .swiper-wrapper {
@@ -291,6 +293,7 @@
         }
         .swiper-slide {
             height: auto;
+            max-height: 280px;
         }
     }
 }

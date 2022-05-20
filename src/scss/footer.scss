@@ -103,6 +103,8 @@
         font-size: 14px;
         line-height: 171%;
         a {
+            line-height: inherit;
+            display: block;
             &:hover {
                 color: $primary-color;
             }
