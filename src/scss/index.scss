@@ -295,6 +295,9 @@
     &__link {
         margin-top: 10px;
         white-space: nowrap;
+        &--mob {
+            display: none;
+        }
     }
     &__item {
         display: flex;
@@ -1187,7 +1190,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        padding: 200px 0 47px;
+        padding: 165px 0 47px;
         &__tabs {
             flex-wrap: wrap;
         }
@@ -1204,6 +1207,13 @@
         &__link {
             width: 100%;
             margin-top: 20px;
+            &--dekstop {
+                display: none;
+            }
+            &--mob {
+                display: flex;
+                margin-bottom: 24px;
+            }
         }
         &__top {
             display: block;
@@ -1497,12 +1507,6 @@
             height: 211px;
             width: 285px;
         }
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .projects-info {
-        padding-top: 260px;
     }
 }
 
