@@ -2,7 +2,8 @@
     color: #3B3938;
     .container {
         min-height: 100vh;
-        // max-width: 842px;
+        max-width: unset;
+        width: 280mm;
         padding: 33px 36px 18px;
         display: flex;
         flex-direction: column;
