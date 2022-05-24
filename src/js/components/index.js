@@ -1,8 +1,11 @@
 function mainSlider() {
     var swiper = new Swiper('.main .swiper-container', {
         slidesPerView: 1,
-        spaceBetween: 10,
-        autoplay: true,
+        spaceBetween: 0,
+        autoplay: {
+            delay: 5000,
+        },
+        speed: 2000,
         // effect: "fade",
         navigation: {
             nextEl: '.main .swiper-button-next',
@@ -143,7 +146,10 @@ function teamSlider() {
 function indexFeedbackSlider() {
     var swiper = new Swiper('.index-feedback .swiper-container', {
         slidesPerView: 1,
-        // autoplay: true,
+        autoplay: {
+            delay: 5000,
+        },
+        speed: 2000,
         pagination: {
             el: '.index-feedback .swiper-pagination',
             type: 'bullets',

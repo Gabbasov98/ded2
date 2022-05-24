@@ -28,6 +28,8 @@
 
 .feedback-card {
     height: 100%;
+    display: flex;
+    flex-direction: column;
     &__top {
         position: relative;
         height: 250px;
@@ -64,6 +66,7 @@
     }
     &__bottom {
         padding: 0 15px;
+        flex-grow: 1;
     }
     &__info {
         padding: 24px 12px;
@@ -73,6 +76,7 @@
         background: #FFFFFF;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
         border-radius: 16px;
+        height: calc(100% + 20px);
     }
     &__title {
         font-weight: 700;
