@@ -1,6 +1,8 @@
 @import 'vars';
 .project-card {
     height: 100%;
+    display: flex;
+    flex-direction: column;
     &__top {
         position: relative;
         // max-height: calc(100% - 90px);
@@ -98,9 +100,11 @@
         padding: 0 20px;
         position: relative;
         z-index: 2;
+        flex-grow: 1;
     }
     &__info {
         margin-top: -30px;
+        height: calc(100% + 30px);
         position: relative;
         z-index: 2;
         background: #FFFFFF;
@@ -249,6 +253,7 @@
         }
         &__info {
             margin-top: -20px;
+            height: calc(100% + 20px);
             padding: 12px;
         }
         &__title {

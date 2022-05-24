@@ -197,7 +197,11 @@
 @media screen and (max-width: 576px) {
     .about-team {
         &__items {
-            grid-template-columns: 1fr;
+            gap: 30px 15px;
+            grid-template-columns: repeat(2, calc(50% - 7.5px));
         }
+    }
+    .team-card__img {
+        height: 145px;
     }
 }

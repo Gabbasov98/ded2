@@ -32,8 +32,8 @@ $(document).ready(function() {
             $(el).attr("data-slider-id", `${index}`)
             cardSlidersArray[index] = new Swiper(`.project-card[data-slider-id="${index}"] .swiper-container`, {
                 slidesPerView: 1,
-                spaceBetween: 0,
-                loop: true,
+                spaceBetween: 10,
+                // loop: true,
                 navigation: {
                     nextEl: `.project-card[data-slider-id="${index}"] .swiper-button-next`,
                     prevEl: `.project-card[data-slider-id="${index}"] .swiper-button-prev`,

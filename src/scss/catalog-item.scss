@@ -792,6 +792,12 @@
                 align-items: flex-end;
             }
         }
+        &__right {
+            margin-left: 40px;
+            @media screen and (max-width: 1400px) {
+                margin-left: 0;
+            }
+        }
         &__link {
             margin-left: 50px;
         }

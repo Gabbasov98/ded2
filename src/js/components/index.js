@@ -2,6 +2,7 @@ function mainSlider() {
     var swiper = new Swiper('.main .swiper-container', {
         slidesPerView: 1,
         spaceBetween: 10,
+        autoplay: true,
         // effect: "fade",
         navigation: {
             nextEl: '.main .swiper-button-next',
@@ -83,7 +84,7 @@ function projectSlider2() {
                 slidesPerView: 2,
                 spaceBetween: 32,
             },
-            1900: {
+            1580: {
                 slidesPerView: 3,
             },
         }
@@ -163,5 +164,10 @@ $(document).ready(function() {
     $(".qa__item-show").click(function() {
         $(this).toggleClass("qa__item-show--active")
         $(this).siblings(".qa__item-hidden").slideToggle()
+    })
+
+    $(".projects-info__tabs .tab").click(function() {
+        projectSlider()
+        projectSlider2()
     })
 })
