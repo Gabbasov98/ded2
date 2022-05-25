@@ -239,9 +239,8 @@
         //     gap: 20px;
         // }
         ul {
-            &:nth-child(even) {
-                margin-left: auto;
-            }
+            display: inline-block;
+            width: 49%;
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
