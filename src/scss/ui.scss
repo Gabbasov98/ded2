@@ -44,27 +44,27 @@
         background: #EDEFEA;
         padding-bottom: 30px;
         .page-top__title {
-            margin-top: 34px;
-            padding-top: 22px;
+            // margin-top: 34px;
+            // padding-top: 22px;
             position: relative;
-            &:before,
-            &:after {
-                content: '';
-                position: absolute;
-                z-index: 1;
-                background: #C4C4C4;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 1px;
-                transform: translateY(-50%);
-            }
-            &:after {
-                width: 170px;
-                height: 3px;
-                background: #3B3938;
-                z-index: 2;
-            }
+            // &:before,
+            // &:after {
+            //     content: '';
+            //     position: absolute;
+            //     z-index: 1;
+            //     background: #C4C4C4;
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 1px;
+            //     transform: translateY(-50%);
+            // }
+            // &:after {
+            //     width: 170px;
+            //     height: 3px;
+            //     background: #3B3938;
+            //     z-index: 2;
+            // }
         }
     }
     &--about {

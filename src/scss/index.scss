@@ -326,7 +326,12 @@
             overflow: hidden;
             margin: 0 30px;
             padding-bottom: 60px;
-            .swiper-slide {}
+            &>.swiper-wrapper {
+                align-items: stretch;
+                &>.swiper-slide {
+                    height: auto;
+                }
+            }
         }
         &-item {
             max-height: 485px;

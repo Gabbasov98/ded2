@@ -34,6 +34,7 @@ $(document).ready(function() {
                 slidesPerView: 1,
                 spaceBetween: 10,
                 lazy: true,
+
                 // loop: true,
                 navigation: {
                     nextEl: `.project-card[data-slider-id="${index}"] .swiper-button-next`,
@@ -53,6 +54,11 @@ $(document).ready(function() {
                             slider.autoplay.stop();
                         });
                     }
+                },
+                breakpoints: {
+                    992: {
+                        allowTouchMove: false,
+                    },
                 }
             })
         })
