@@ -326,6 +326,7 @@
             overflow: hidden;
             margin: 0 30px;
             padding-bottom: 60px;
+            width: 100%;
             &>.swiper-wrapper {
                 align-items: stretch;
                 &>.swiper-slide {
@@ -335,6 +336,9 @@
         }
         &-item {
             max-height: 485px;
+        }
+        .swiper-button-disabled {
+            opacity: 0 !important;
         }
     }
 }

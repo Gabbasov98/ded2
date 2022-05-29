@@ -6,6 +6,7 @@ function mainSlider() {
             delay: 5000,
         },
         speed: 2000,
+        loop: true,
         // effect: "fade",
         navigation: {
             nextEl: '.main .swiper-button-next',
@@ -57,6 +58,7 @@ function projectSlider() {
             992: {
                 slidesPerView: 2,
                 spaceBetween: 32,
+                allowTouchMove: false,
             },
             1580: {
                 slidesPerView: 3,
@@ -86,6 +88,7 @@ function projectSlider2() {
             992: {
                 slidesPerView: 2,
                 spaceBetween: 32,
+                allowTouchMove: false,
             },
             1580: {
                 slidesPerView: 3,
@@ -146,6 +149,7 @@ function teamSlider() {
 function indexFeedbackSlider() {
     var swiper = new Swiper('.index-feedback .swiper-container', {
         slidesPerView: 1,
+        loop: true,
         autoplay: {
             delay: 5000,
         },

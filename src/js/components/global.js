@@ -35,7 +35,7 @@ $(document).ready(function() {
                 spaceBetween: 10,
                 lazy: true,
 
-                // loop: true,
+                loop: true,
                 navigation: {
                     nextEl: `.project-card[data-slider-id="${index}"] .swiper-button-next`,
                     prevEl: `.project-card[data-slider-id="${index}"] .swiper-button-prev`,

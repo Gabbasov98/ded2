@@ -2,8 +2,8 @@
     color: #3B3938;
     min-height: 100vh;
     .container {
-        max-width: unset;
-        width: 280mm;
+        max-width: 100%;
+        width: 100%;
         padding: 33px 36px 18px;
         display: flex;
         flex-direction: column;
@@ -45,7 +45,6 @@
     &__img {
         display: inline-block;
         width: 49.5%;
-        height: 300px;
         &:nth-child(odd) {
             padding-right: 9px;
         }
@@ -54,7 +53,7 @@
         }
         img {
             width: 100%;
-            height: 100%;
+            height: 300px;
             object-fit: cover;
             display: block;
         }
@@ -233,17 +232,11 @@
         border: 1px solid #E2E2E2;
         border-top: none;
         padding: 21px 16px;
-        // &--grid {
-        //     display: grid;
-        //     grid-template-columns: 1fr 1fr;
-        //     gap: 20px;
-        // }
+        display: flex;
+        justify-content: space-between;
         ul {
             display: inline-block;
             width: 49%;
-            &:not(:last-child) {
-                margin-bottom: 10px;
-            }
             li {
                 font-size: 10px;
                 line-height: 20px;
