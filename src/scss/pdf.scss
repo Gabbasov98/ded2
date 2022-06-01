@@ -69,9 +69,10 @@
         align-items: center;
         img {
             margin-right: 14px;
+            width: 72px;
         }
         &-title {
-            font-size: 16px;
+            font-size: 19px;
             line-height: 26px;
             color: #777777;
         }
@@ -238,7 +239,7 @@
             display: inline-block;
             width: 49%;
             li {
-                font-size: 10px;
+                font-size: 14px;
                 line-height: 20px;
                 padding-left: 24px;
                 &:not(:last-child) {
