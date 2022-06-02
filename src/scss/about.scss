@@ -1,5 +1,5 @@
 .about {
-    padding: 30px 0;
+    padding: 32px 0 56px;
     &__ceo {
         display: flex;
         &-img {
@@ -52,7 +52,7 @@
 
 .about-why {
     background: #EDEFEA;
-    padding: 60px 0 75px;
+    padding: 60px 0;
     li {
         padding-left: 97px;
         line-height: 162%;
@@ -72,7 +72,7 @@
 }
 
 .about-team {
-    padding: 30px 0 90px;
+    padding: 60px 0 90px;
     &__desc {
         font-weight: 600;
         font-size: 18px;
